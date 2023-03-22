@@ -1,13 +1,23 @@
 ---
+import { log } from "astro/dist/core/logger/core";
 import RootLayout from "../../../layouts/RootLayout.astro";
-const animals = await fetch('http://localhost:3001/molystechie.github.io/api/json').then(res => res.json());
+// const people = await fetch('http://localhost:3001/molystechie.github.io/api/json').then(res => res.json());
+let people;
+try {
+    const res = await fetch('http://localhost:3001/molystechie.github.io/api/json');
+    people = await res.json();
+
+} catch (error) {
+    console.log(error);
+    
+}
 ---
 <RootLayout title="JSON examples" description='Shows JSON Examples'>
     <main class="min-h-screen flex flex-col justify-center items-center">
         <h1>JSON EXAMPLES</h1>
         <code>
             {
-                JSON.stringify(animals,null,2)
+                JSON.stringify(people,null,2)
             }
         </code>
         
