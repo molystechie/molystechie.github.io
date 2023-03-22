@@ -4,7 +4,8 @@ import RootLayout from "../../../layouts/RootLayout.astro";
 // const people = await fetch('http://localhost:3001/molystechie.github.io/api/json').then(res => res.json());
 let people;
 try {
-    const res = await fetch('http://localhost:3001/molystechie.github.io/api/json');
+    const res = await fetch('/molystechie.github.io/api/json');
+    // const res = await fetch('http://localhost:3001/molystechie.github.io/api/json');
     people = await res.json();
 
 } catch (error) {

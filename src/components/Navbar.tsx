@@ -75,7 +75,7 @@ export const Navbar = () => {
                         <a href="/molystechie.github.io/#store" onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
                             <li>Store</li>
                         </a>
-                        <a href="/molystechie.github.io/#developer"  className='p-4'>
+                        <a href="/#developer"  className='p-4'>
                             <li>Developer</li>
                         </a>
                         <a href="/molystechie.github.io/#contact" onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
