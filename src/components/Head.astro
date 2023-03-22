@@ -17,6 +17,8 @@ const {seoTitle, seoDescription} = Astro.props as HeadProps
     <title>{seoTitle}</title>
     {/* <title>{props.title}</title> */}
 
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
     <meta property='og:site_name' content="MolysTechie" />
     <meta property='og:title' content={seoTitle} />
     <meta property='og:description' content={seoDescription  } />
