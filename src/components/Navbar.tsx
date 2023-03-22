@@ -44,7 +44,7 @@ export const Navbar = () => {
                     <a href="/molystechie.github.io/#store"  className='p-4'>
                         <li>Store</li>
                     </a>
-                    <a href="/molystechie.github.io/#developer"  className='p-4'>
+                    <a href="/#developer"  className='p-4'>
                         <li>Developer</li>
                     </a>
                     <a href="/molystechie.github.io/#contact"  className='p-4'>
