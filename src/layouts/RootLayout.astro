@@ -1,0 +1,24 @@
+---
+// Component Script (JavaScript)
+import Head from '../components/Head.astro';
+import {Navbar} from '../components/Navbar';
+import Footer from '../components/Footer.astro';
+
+export interface BaseLayoutProps {
+    title:string;
+    description:string;
+}
+
+const {title, description} = Astro.props as BaseLayoutProps;
+---
+<html>
+  <Head seoTitle= {title} seoDescription={description} />
+  <body class="bg-slate-400">
+    <>
+    <Navbar client:load />
+      <!-- your content is injected in <slot />  -->
+      <slot /> 
+      <Footer />
+    </>
+  </body>
+</html>

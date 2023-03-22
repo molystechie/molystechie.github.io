@@ -1,15 +1,22 @@
 ---
----
+import Hero from "../components/Hero.astro";
+import RootLayout from "../layouts/RootLayout.astro";
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+---
+<RootLayout title="Home|MolysTechie" description="Home Page">
+	<main id='home'>
+		<!-- <h1 class="text-4xl uppercase font-bold">Welcome to MolysTechie</h1> -->
+		<Hero />
+		<section id='developer' class="min-h-screen flex flex-col justify-center items-center">
+			<h1 class="text-4xl font-bold">Developer Resources Hub for Practicing and Learning</h1>
+			<div class="">
+				<h2>JSON Placeholder for developement practice</h2>
+				<p>
+					Check example of JSON, visit
+					<a href="/molystechie.github.io/developer/json-examples" target="_blank" class="text-xl text-blue-500">JSON</a>
+				</p>
+			</div>
+
+		</section>
+	</main>
+</RootLayout>

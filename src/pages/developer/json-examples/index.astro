@@ -1,0 +1,22 @@
+---
+import RootLayout from "../../../layouts/RootLayout.astro";
+const animals = await fetch('http://localhost:3001/molystechie.github.io/api/json').then(res => res.json());
+---
+<RootLayout title="JSON examples" description='Shows JSON Examples'>
+    <main class="min-h-screen flex flex-col justify-center items-center">
+        <h1>JSON EXAMPLES</h1>
+        <code>
+            {
+                JSON.stringify(animals,null,2)
+            }
+        </code>
+        
+        <div class="grid mt-5">
+            <p>The API above JSON, its Endpoint : http://molystechie.github.io/api/json
+            </p>
+            <p class="text-center">Visit the 
+                <a href="http://localhost:3001/molystechie.github.io/api/json" target="_blank" class="text-blue-500 text-md">Endpoint</a>
+            </p>
+        </div>
+    </main>
+</RootLayout>
