@@ -7,8 +7,8 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: 'https://molystechie.github.io',
-  base: '/'
-  // base: '/molystechie.github.io'
+  base: '/molystechie.github.io'
+  // base: '/'
 });
 
 /** Hosting on Github > https://docs.astro.build/en/guides/deploy/github/
