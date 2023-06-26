@@ -1,8 +1,9 @@
 ---
-
+import RootLayout from "../layouts/RootLayout.astro";
 ---
-<script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
-
-<main class="h-screen bg-[#5e83aa] flex items-center justify-center">
-  <h1 class="font-bold text(center 5xl white)">About MolysTechie</h1>
-</main>
+<RootLayout title="Home|MolysTechie" description="Home Page">
+    <main class="h-screen bg-[#5e83aa] flex flex-col items-center gap-y-5 justify-start p-10">
+    <h1 class="font-bold text(center 5xl white)">About MolysTechie</h1>
+    <p class="text-yellow-500">hello</p>
+    </main>
+</RootLayout>
