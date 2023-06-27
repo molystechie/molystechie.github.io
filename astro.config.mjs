@@ -6,10 +6,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  // integrations: [tailwind(), react()],
   site: 'https://molystechie.github.io',
-  // base: '/molystechie.github.io'
-  // base: '/'
 });
 
 /** Hosting on Github > https://docs.astro.build/en/guides/deploy/github/
@@ -20,7 +17,7 @@ You can deploy an Astro site to GitHub Pages by using GitHub Actions to automati
 * Set the site and, if needed, base options in astro.config.mjs.
     import { defineConfig } from 'astro/config'
     export default defineConfig({
-      site: 'https://johnnylyimo.github.io',
+      site: 'https://johnnylyimo.github.io/my-repo',
       base: '/my-repo',
     })
   
