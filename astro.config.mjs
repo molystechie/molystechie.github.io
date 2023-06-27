@@ -30,7 +30,7 @@ You can deploy an Astro site to GitHub Pages by using GitHub Actions to automati
 
 
   * Commit your project to GitHub
-				
+      	
   * Set deploy source
   On GitHub in your project folder Go to settings of your repository > pages 
   on pages change Deploy source to GitHub Actions and not deploy from a branch 
