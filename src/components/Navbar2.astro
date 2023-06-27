@@ -1,0 +1,27 @@
+
+---
+const links = [
+    {id:1, title:'Home', url:'/'},
+    {id:2, title:'About', url:'/#about'},
+    {id:3, title:'Portfolio', url:'/#portfolio'},
+    {id:3, title:'Developer', url:'/#developer'},
+    {id:4, title:'Blog', url:'/#blog'},
+    {id:5, title:'Contact', url:'/#contact'},
+]
+---
+
+    <nav class='w-full h-16 bg-[#6c708b] flex justify-around items-center gap-5 p-2'>
+        <div class="">
+            <a  href={'/molystechie'}>
+                <img src='/molys.jpeg' alt='logo' width={56} height={56} class='rounded-full'/>
+            </a>
+        </div>
+        <div class="flex gap-4 text-white">
+            {
+                links.map(link =>(
+                    <a  href={link.url}>{link.title}</a>
+                ))
+            }
+        </div>
+    </nav>
+ 
