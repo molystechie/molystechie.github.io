@@ -6,7 +6,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  site: 'https://molystechie.github.io',
+  site: 'https://molystechie.github.io'
 });
 
 /** Hosting on Github > https://docs.astro.build/en/guides/deploy/github/
