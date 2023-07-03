@@ -9,7 +9,10 @@ export default defineConfig({
   site: 'https://molystechie.github.io'
 });
 
-/** Hosting on Github > https://docs.astro.build/en/guides/deploy/github/
+/** 
+ * https://undraw.co/search >>> base color: #6C708B
+ * 
+ * Hosting on Github > https://docs.astro.build/en/guides/deploy/github/
 How to deploy
 You can deploy an Astro site to GitHub Pages by using GitHub Actions to automatically build and deploy your site. To do this, your source code must be hosted on GitHub.
 
