@@ -1,11 +1,11 @@
 ---
 
 ---
-<section id='about' class='w-4/5 mx-auto flex flex-col items-center gap-20 p-5 text-black'>
+<section id='about' class='w-4/5 mx-auto flex flex-col items-center gap-20 mt-10 p-5 text-black'>
     <h1 class="text-4xl font-bold">About Us</h1>
-    <div class='flex flex-col gap-10 lg:flex-row'>
-        <img id="about-image" src='/about.svg' alt='hero image'  class='md:order-2'/>
-        <div class="flex flex-col gap-y-2 items-center md:order-1 ">
+    <div class='flex flex-col gap-10 lg:grid grid-cols-5 py-5'>
+        <img id="about-image" src='/about.svg' alt='hero image' height="720"   class='md:order-2  col-span-2'/>
+        <div class="flex flex-col gap-y-2 items-center md:order-1 col-span-3">
             <h1 class="text-2xl font-bold">Who are we?</h1>
             <p>Welcome to MolysTechie Solutions, where innovation meets excellence! We are a leading software company dedicated to empowering businesses and individuals with cutting-edge technology solutions. Our team of skilled and passionate professionals is committed to delivering high-quality software products and services that transform the way you do business.</p>
 
@@ -16,8 +16,8 @@
     </div>
     <div class='flex flex-col items-center justify-start gap-5'>
         <h1 class="text-2xl font-bold">What Sets Us Apart</h1>
-        <div class="flex flex-col gap-5 items-center lg:flex-row lg:items-center ">
-          <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-5 items-center lg:grid grid-cols-6">
+          <div class="flex flex-col gap-5 col-span-4 lg:col-span-3">
               <p>
                 1. Expert Team: Our team of talented software engineers, designers, and project managers brings a diverse set of skills and expertise to the table. We work collaboratively to craft customized solutions that align with your unique requirements.
               </p>
@@ -31,7 +31,7 @@
                 4. Quality Assurance: We adhere to stringent quality control measures, conducting rigorous testing and QA checks throughout the development process. This ensures that our products are reliable, secure, and user-friendly.
               </p>
             </div>
-            <img id="about-image" src='/team.svg' alt='team image'  class=''/>
+            <img id="about-image" src='/team.svg' alt='team image'  class='col-span-2 lg:col-span-3'/>
       </div>
     </div>
     <div class="flex flex-col gap-y-5 items-center ">
@@ -78,8 +78,8 @@
 
 #about-image{
 	width: 640px;
-	height: 260px;
-	object-fit: cover;
+	height: 360px;
+	object-fit: contain;
 }
 
 #what-we-do{

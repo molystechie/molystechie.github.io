@@ -1,5 +1,4 @@
 ---
-import { log } from "astro/dist/core/logger/core";
 import RootLayout from "../../../layouts/RootLayout.astro";
 // const people = await fetch('http://localhost:3001/molystechie.github.io/api/json').then(res => res.json());
 let people;
@@ -13,7 +12,6 @@ try {
     
 }
 ---
-<!-- <script type="module" src="https://cdn.skypack.dev/twind/shim"></script> -->
 
 <RootLayout title="JSON examples" description='Shows JSON Examples'>
     <main class="min-h-screen flex flex-col justify-center items-center">
