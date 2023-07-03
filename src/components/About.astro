@@ -1,0 +1,92 @@
+---
+
+---
+<section id='about' class='w-4/5 mx-auto flex flex-col items-center gap-20 p-5 text-black'>
+    <h1 class="text-4xl font-bold">About Us</h1>
+    <div class='flex flex-col gap-10 lg:flex-row'>
+        <img id="about-image" src='/about.svg' alt='hero image'  class='md:order-2'/>
+        <div class="flex flex-col gap-y-2 items-center md:order-1 ">
+            <h1 class="text-2xl font-bold">Who are we?</h1>
+            <p>Welcome to MolysTechie Solutions, where innovation meets excellence! We are a leading software company dedicated to empowering businesses and individuals with cutting-edge technology solutions. Our team of skilled and passionate professionals is committed to delivering high-quality software products and services that transform the way you do business.</p>
+
+            <h1 class="text-2xl font-bold">Our Mission:</h1>
+            <p>At EmpowerTech Solutions, our mission is to provide innovative software solutions that enable our clients to thrive in an ever-evolving digital landscape. We strive to simplify complex challenges and enhance productivity through our tailored software offerings.</p>
+        </div>
+    
+    </div>
+    <div class='flex flex-col items-center justify-start gap-5'>
+        <h1 class="text-2xl font-bold">What Sets Us Apart</h1>
+        <div class="flex flex-col gap-5 items-center lg:flex-row lg:items-center ">
+          <div class="flex flex-col gap-5">
+              <p>
+                1. Expert Team: Our team of talented software engineers, designers, and project managers brings a diverse set of skills and expertise to the table. We work collaboratively to craft customized solutions that align with your unique requirements.
+              </p>
+              <p>
+                2. Client-Centric Approach: Customer satisfaction is at the heart of everything we do. We listen to your needs, understand your objectives, and tailor our software solutions accordingly. Your success is our success.
+              </p>
+              <p>
+                3. Innovation-driven: In an ever-changing tech world, staying ahead of the curve is crucial. We embrace the latest industry trends and technologies, ensuring that our clients benefit from state-of-the-art software solutions.
+              </p>
+              <p>
+                4. Quality Assurance: We adhere to stringent quality control measures, conducting rigorous testing and QA checks throughout the development process. This ensures that our products are reliable, secure, and user-friendly.
+              </p>
+            </div>
+            <img id="about-image" src='/team.svg' alt='team image'  class=''/>
+      </div>
+    </div>
+    <div class="flex flex-col gap-y-5 items-center ">
+        <h1  class="text-2xl font-bold mb-2">What we do?</h1>
+        <div class="grid gap-y-20">
+            <div class="flex flex-col gap-5 lg:flex-row lg:items-center">
+                <p>
+                    Dynamic Web App Development: Enhance your digital presence with dynamic and engaging web applications that deliver seamless user experiences.</p>
+                <img id="what-we-do" src='/webdesign.svg' width="64" height="64" alt='hero image'  class=''/>
+            </div>
+            <div class="flex flex-col gap-5 lg:flex-row lg:items-center ">
+                <p>
+                    Fast and Handy Mobile Apps Development: Enhance your digital presence with dynamic and engaging Mobile applications that deliver seamless user experiences.</p>
+                <img id="what-we-do" src='/mobile.svg' width="64" height="64" alt='hero image'  class=''/>
+            </div>
+            <div class="flex flex-col gap-5 lg:flex-row lg:items-center">
+                <p>
+                    Fast and Handy Creative Illustrations that bring your idea to sucesfully digital product.</p>
+                <img id="what-we-do" src='/idea.svg' width="64" height="64" alt='hero image'  class=''/>
+            </div>
+        </div>
+
+        <!-- <a href={'/molystechie/contact'} class=' text-white bg-[#6c708b] font-semibold rounded-full px-5 py-2 hover:bg-[#b4b7c5] hover:shadow-xl hover:border-2 border-[#6c708b] hover:text-black '>
+            Contact Us
+        </a> -->
+    </div>
+</section>
+
+<style>
+	img{
+	animation: move 5s infinite ease alternate;
+}
+@keyframes move{
+	from{transform: translateY(-15px)}
+	to{transform: translateY(15px)}
+}
+
+
+#imgtext{
+	position: absolute;
+	left: 39%;
+	bottom: 10px;
+}
+
+#about-image{
+	width: 640px;
+	height: 260px;
+	object-fit: cover;
+}
+
+#what-we-do{
+	width: 640px;
+	height: 160px;
+	object-fit: contain;
+}
+</style>
+
+
